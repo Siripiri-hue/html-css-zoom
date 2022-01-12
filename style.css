@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+     list-style: none;
+}
+
+li {
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+}
+
+/* navbar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    color: white;
+    height: 8vh;
+    line-height: 8vh;
+    vertical-align: middle;
+}
+
+#video-actions ul {
+    display: flex;
+    gap: 20px;
+}
+
+#call-actions ul {
+    display: flex;
+    gap: 20px;
+}
+
+#end-meeting {
+    background-color: #4A4A4A;
+    color: red;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/* main */
+main {
+    background-color: black;
+}
+
+/* schermata */
+#screen {
+    height: 80vh;
+}
+.call-partecipant {
+    background-image: url(https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y);
+    background-size: cover;
+    width: 250px;
+    height: 145px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    height: 10vh;
+}
