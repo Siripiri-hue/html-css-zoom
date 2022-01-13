@@ -1,46 +1,56 @@
+/* regole di reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: white;
 }
 
-ul {
-     list-style: none;
-}
+img { max-width: 100%; }
+ul { list-style: none; }
+li { cursor: pointer; }
 
-li {
-    cursor: pointer;
-}
+/* ---*/
 
 body {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
+    height: 100vh;
 }
 
-/* navbar */
+    /* TOOLBAR */
 
-#navbar {
+#toolbar {
     display: flex;
     justify-content: space-between;
     background-color: #222222;
-    color: white;
-    height: 8vh;
-    line-height: 8vh;
-    vertical-align: middle;
+    align-items: center;
 }
 
-#video-actions ul {
+/* gruppi icone */
+#video-actions, #call-actions {
     display: flex;
     gap: 20px;
 }
 
-#call-actions ul {
+.icons-box {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
 }
 
+.icon {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+/* button fine chiamata */
 #end-meeting {
     background-color: #4A4A4A;
     color: red;
@@ -48,17 +58,17 @@ body {
     cursor: pointer;
 }
 
-/* main */
+    /* main */
 main {
     background-color: black;
 }
 
 /* schermata */
 #screen {
-    height: 80vh;
+    display: flex;
 }
 .call-partecipant {
-    background-image: url(https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y);
+    background-image: url(https://picsum.photos/id/1025/200/300);
     background-size: cover;
     width: 250px;
     height: 145px;
@@ -66,11 +76,11 @@ main {
 
 .row {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    gap: 15px 15px;
 }
 
 /* footer */
 footer {
     background-color: black;
-    height: 10vh;
 }
