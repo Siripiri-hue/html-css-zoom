@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,94 +9,96 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
 </head>
+
 <body>
 
     <header>
+        <!-- barra degli strumenti -->
         <nav id="toolbar">
-                <ul id="video-actions">
-                    <li class="icons-box">
-                        <div class="icon">
-                            <i class="fas fa-microphone"></i>
-                            <span>Mute</span>
-                        </div>
-                            <i class="fas fa-chevron-up"></i>
-                    </li>
+            <!-- primo gruppo di icone  -->
+            <ul id="video-actions">
+                <li class="icons-box">
+                    <div class="icon">
+                        <i class="fas fa-microphone"></i>
+                        <span>Mute</span>
+                    </div>
+                    <i class="fas fa-chevron-up"></i>
+                </li>
 
-                    <li class="icons-box">
-                        <div class="icon">
-                            <i class="fas fa-video"></i>
-                            <span>Stop Video</span>
-                        </div>
-                            <i class="fas fa-chevron-up"></i>
-                    </li>
-                </ul>
+                <li class="icons-box">
+                    <div class="icon">
+                        <i class="fas fa-video"></i>
+                        <span>Stop Video</span>
+                    </div>
+                    <i class="fas fa-chevron-up"></i>
+                </li>
+            </ul>
 
-                <ul id="call-actions">
-                    <li class="icon">
-                        <i class="fas fa-user-plus"></i>
-                        <span>Invite</span>
-                    </li>
+            <!-- secondo gruppo di icone -->
+            <ul id="call-actions">
+                <li class="icon">
+                    <i class="fas fa-user-plus"></i>
+                    <span>Invite</span>
+                </li>
 
-                    <li class="icon">
-                        <i class="fas fa-user-friends"></i>
-                        <span>Manage Partecipants</span>
-                    </li>
+                <li class="icon">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Manage Partecipants</span>
+                </li>
 
-                    <li class="icon">
-                        <i class="fas fa-poll"></i>
-                        <span>Polling</span>
-                    </li>
+                <li class="icon">
+                    <i class="fas fa-poll"></i>
+                    <span>Polling</span>
+                </li>
 
-                    <li class="icons-box">
-                        <div class="icon">
-                            <i class="fas fa-share-square"></i>
-                            <span>Share Screen</span>
-                        </div>
-                            <i class="fas fa-chevron-up"></i>
-                    </li>
+                <li class="icons-box">
+                    <div class="icon">
+                        <i class="fas fa-share-square"></i>
+                        <span>Share Screen</span>
+                    </div>
+                    <i class="fas fa-chevron-up"></i>
+                </li>
 
-                    <li class="icon">
-                        <i class="far fa-comment-alt"></i>
-                        <span>Chat</span>
-                    </li>
+                <li class="icon">
+                    <i class="far fa-comment-alt"></i>
+                    <span>Chat</span>
+                </li>
 
-                    <li class="icon">
-                        <i class="far fa-dot-circle"></i>
-                        <span>Record</span>
-                    </li>
+                <li class="icon">
+                    <i class="far fa-dot-circle"></i>
+                    <span>Record</span>
+                </li>
 
-                    <li class="icon">
-                        <i class="fas fa-th-large"></i>
-                        <span>Breakouts Room</span>
-                    </li>
+                <li class="icon">
+                    <i class="fas fa-th-large"></i>
+                    <span>Breakouts Room</span>
+                </li>
 
-                    <li class="icon">
-                        <i class="fas fa-ellipsis-h"></i>
-                        <span>More</span>
-                    </li>
-                    
-                </ul>
+                <li class="icon">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <span>More</span>
+                </li>
+            </ul>
 
-            <div id="end-meeting">
-                <p>End Meetings</p>
-            </div>
+            <!-- bottone fine chiamata -->
+            <!-- <div id="end-meeting"> -->
+            <button id="end-meeting">End Meeting</button>
+            <!-- </div> -->
         </nav>
     </header>
 
     <main>
         <div id="screen"> 
-                <div class="call-partecipant"></div>
-                <div class="call-partecipant"></div>
-                <div class="call-partecipant"></div>
-                <div class="call-partecipant"></div>
-                <div class="call-partecipant"></div>
-                <div class="call-partecipant"></div>  
+                <div class="call-partecipant">
+                    <img src="https://picsum.photos/id/1025/200/300">
+                    <div class="caller-label">
+                        <i class="fas fa-microphone-slash"></i>
+                        <span>Pinco Pallo</span>
+                    </div>
+                </div>
         </div>
     </main>
 
-    <footer>
-        
-    </footer>
-
 </body>
+
 </html>
