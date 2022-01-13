@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
+    height: 100vh;
 }
 
     /* TOOLBAR */
@@ -47,7 +48,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 /* button fine chiamata */
@@ -64,17 +64,21 @@ main {
     flex-grow: 1;
 }
 
-
 /* schermata */
 #screen {
     display: flex;
-    justify-content: space-around;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px 20px;
+    height: 100%;
 }
 
 .call-partecipant {
     width: 250px;
     height: 145px;
     border: 2px solid green;
+    position: relative;
 }
 
 .call-partecipant img {
@@ -82,4 +86,12 @@ main {
     height: 100%;
     object-fit: cover;
     object-position: top center;
+}
+
+.caller-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* opacity: 0.3; */
 }
