@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: 10px;
     color: white;
 }
 
@@ -26,21 +26,24 @@ body {
 #toolbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #222222;
     align-items: center;
     padding: 10px;
 }
 
+#toolbar i { font-size: 25px; }
+
 /* gruppi icone */
 #video-actions, #call-actions {
     display: flex;
-    gap: 15px;
+    gap: 0 20px;
 }
 
 .icons-box {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0 10px;
 }
 
 .icon {
@@ -48,6 +51,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px 0;
+}
+
+.green-icon {
+    color: #4BC800;
 }
 
 /* button fine chiamata */
